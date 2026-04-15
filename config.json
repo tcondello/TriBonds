@@ -1,0 +1,28 @@
+{
+  "models": [
+    {
+      "provider": "openai",
+      "model": "gpt-5.4",
+      "enabled": true
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-opus-4-6",
+      "enabled": true
+    },
+    {
+      "provider": "google",
+      "model": "gemini-3-flash-preview",
+      "enabled": false
+    }
+  ],
+  "model_timeout_seconds": 60,
+  "max_retries": 3,
+  "backoff_base_seconds": 5,
+  "csv": {
+    "input_file": "data/TriBonds - Challenge.csv",
+    "output_file": "data/TriBonds - results.csv",
+    "word_columns": ["Word 1", "Word 2", "Word 3"],
+    "answer_columns": ["Answer", "Answer 2"]
+  }
+}

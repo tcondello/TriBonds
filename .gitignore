@@ -1,0 +1,19 @@
+# Environment — never commit real keys
+.env
+
+# Python
+.venv/
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+
+# Results — generated output, not source
+data/*results*.csv
+
+# macOS
+.DS_Store
+
+# Claude Code local settings
+.claude/
