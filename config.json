@@ -1,24 +1,135 @@
 {
   "models": [
     {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/ember-1",
+      "reasoning_effort": "low",
+      "enabled": true
+    },
+    {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/routers/glm-5p3-fast",
+      "reasoning_effort": "low",
+      "enabled": true
+    },
+    {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/glm-5p3",
+      "reasoning_effort": "low",
+      "enabled": true
+    },
+    {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/glm-5p3-flash",
+      "enabled": true
+    },
+    {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/routers/kimi-k3-fast",
+      "reasoning_effort": "none",
+      "enabled": true
+    },
+    {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/kimi-k3",
+      "reasoning_effort": "none",
+      "enabled": true
+    },
+    {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/deepseek-v4p1-flash",
+      "reasoning_effort": "none",
+      "enabled": true
+    },
+    {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/gpt-oss-120b",
+      "reasoning_effort": "low",
+      "enabled": true
+    },
+    {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/qwen3p8-max",
+      "reasoning_effort": "low",
+      "enabled": true
+    },
+    {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/qwen3p8-2p4t-a95b",
+      "reasoning_effort": "low",
+      "enabled": true
+    },
+    {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/nemotron-3-ultra-nvfp4",
+      "reasoning_effort": "low",
+      "enabled": true
+    },
+    {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/nemotron-lightning-3p5-30b-a3b",
+      "reasoning_effort": "none",
+      "enabled": true
+    },
+    {
+      "provider": "fireworks",
+      "model": "accounts/fireworks/models/minimax-m3",
+      "reasoning_effort": "none",
+      "enabled": true
+    },
+    {
       "provider": "openai",
-      "model": "gpt-5.4",
+      "model": "gpt-6.1-sol",
+      "reasoning_effort": "low",
+      "enabled": true
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-6-astra",
+      "reasoning_effort": "low",
+      "enabled": true
+    },
+    {
+      "provider": "openai",
+      "model": "gpt-6-luna",
       "enabled": true
     },
     {
       "provider": "anthropic",
-      "model": "claude-opus-4-6",
+      "model": "claude-opus-5-5",
+      "enabled": true
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-sonnet-5-5",
+      "enabled": true
+    },
+    {
+      "provider": "anthropic",
+      "model": "claude-haiku-5-5",
       "enabled": true
     },
     {
       "provider": "google",
-      "model": "gemini-3-flash-preview",
+      "model": "gemini-3.8-flash",
+      "enabled": true
+    },
+    {
+      "provider": "google",
+      "model": "gemini-4-argon",
       "enabled": false
+    },
+    {
+      "provider": "google",
+      "model": "gemini-3.5-flash",
+      "enabled": true
     }
   ],
   "model_timeout_seconds": 60,
   "max_retries": 3,
-  "backoff_base_seconds": 5,
+  "backoff_base_seconds": 3,
+  "prompt_cache_affinity": true,
+  "row_delay_seconds": 0.5,
   "csv": {
     "input_file": "data/TriBonds - Challenge.csv",
     "output_file": "data/TriBonds - results.csv",

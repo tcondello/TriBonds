@@ -9,8 +9,9 @@ __pycache__/
 *.pyd
 .Python
 
-# Results — generated output, not source
-data/*results*.csv
+# Results — track canonical benchmark results, ignore temporary outputs
+!data/TriBonds - results.csv
+data/*results*.csv.tmp
 
 # macOS
 .DS_Store
